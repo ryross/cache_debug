@@ -1,3 +1,4 @@
 services:
   cache.backend.cache_debug:
     class: Drupal\cache_debug\Cache\DebugBackendFactory
+    arguments: ['@database', '@cache_tags.invalidator.checksum', '@settings']

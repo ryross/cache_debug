@@ -2,9 +2,10 @@
 
 namespace Drupal\cache_debug\Cache;
 
+use Drupal\Core\Cache\DatabaseBackend;
 use Drupal\Core\Cache\MemoryBackend;
 
-class DebugBackend extends MemoryBackend {
+class DebugBackend extends DatabaseBackend {
 
   /**
    * {@inheritdoc}
